@@ -6,3 +6,4 @@ use Moose::Role;    # Role!!
 requires 'fly'; 
 
 1;
+
