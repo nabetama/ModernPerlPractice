@@ -1,0 +1,9 @@
+mysql> describe member;
++-----------+---------+------+-----+---------+-------+
+| Field     | Type    | Null | Key | Default | Extra |
++-----------+---------+------+-----+---------+-------+
+| firstname | text    | YES  |     | NULL    |       |
+| lastname  | text    | YES  |     | NULL    |       |
+| member_id | int(11) | YES  |     | NULL    |       |
++-----------+---------+------+-----+---------+-------+
+    3 rows in set (0.00 sec)

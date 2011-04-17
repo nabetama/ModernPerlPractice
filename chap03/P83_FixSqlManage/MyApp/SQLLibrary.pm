@@ -3,12 +3,15 @@ use Moose;
 use MooseX::Types::Path::Class;
 use YAML ();
 
+# predicateは値が定義済(代入済)か確認するメソッドを作ってくれる。
 has 'last_modified' => (
     is => 'rw',
     isa => 'Int',
     predicate => 'has_last_modified',
 );
 
+# coerceを設定しておかないと、isaで定義されていない変換前の型を設定しようと
+# するとエラーになる。
 has 'file' => (
     is => 'rw',
     isa => 'Path::Class::File',
