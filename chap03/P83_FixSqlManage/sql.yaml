@@ -1,0 +1,2 @@
+get_member: "SELECT * FROM member WHERE member_id = ?"
+get_session: "SELECT * FROM session WHERE session_id = ?"
